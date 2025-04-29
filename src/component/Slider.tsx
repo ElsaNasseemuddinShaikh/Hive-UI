@@ -27,7 +27,7 @@ const VideoCarousel = ({ title }: { title: string }) => {
         <div className="w-full flex flex-col gap-[12px] justify-center items-center">
           <SectionHeading headingText="OUR VIDEOS" />
           <CustomTitle text={title} />
-          <p className="mt-4 sm:text-[18px] text-[22px] font-[400] text-[#FFFFFF] text-center">
+          <p className="mt-4 text-[18px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[400] text-[#FFFFFF] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>

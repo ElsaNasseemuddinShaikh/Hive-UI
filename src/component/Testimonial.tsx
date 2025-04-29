@@ -56,18 +56,29 @@ const TestimonialSection = () => {
                 />
               </div>
 
-              <span className="text-[#484848] text-[22px] font-[400] leading-[100%] font-[Poppins] capitalize">
+              <span
+                className="text-[#484848] font-[Poppins] font-[400] leading-[100%] capitalize
+                 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] xl:text-[22px]"
+              >
                 {testimonials[currentTestimonial].text}
               </span>
 
               {/* Author Info */}
               <div className="flex justify-between items-center w-full">
                 <div>
-                  <h4 className="text-[#181819] font-[Poppins] font-[700] text-[30px] leading-[100%] capitalize">
+                  <h4
+                    className="text-[#181819] font-[Poppins] font-[700] 
+                 text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[30px] 
+                 leading-[100%] capitalize"
+                  >
                     {testimonials[currentTestimonial].name}
                   </h4>
 
-                  <p className="text-[#484848] font-[Poppins] font-[400] text-[22px] leading-[100%] capitalize">
+                  <p
+                    className="text-[#484848] font-[Poppins] font-[400] 
+                text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] xl:text-[22px] 
+                leading-[100%] capitalize"
+                  >
                     {testimonials[currentTestimonial].designation}
                   </p>
                 </div>

@@ -7,20 +7,19 @@ import CustomTitle from "./Ui/ComonTitle";
 import { teamMembers } from "@/utils/teamData";
 
 const TeamSection = () => {
-
   return (
-    <section className="w-full h-auto text-white pt-[100px] px-4 sm:px-[40px] md:px-[80px] lg:px-[110px] xl:px-[310px] pb-[100px] flex flex-col gap-[60px]">
+    <section className="w-full h-auto text-white pt-[100px] px-4 sm:px-[40px] md:px-[80px] lg:px-[110px] xl:px-[150px] pb-[100px] flex flex-col gap-[60px]">
       <div className="w-full flex flex-col gap-[12px] justify-center items-center">
         <SectionHeading headingText="Our Team" />
         <CustomTitle text={"Meet Our Team"} />
       </div>
 
-      <div className="w-ful">
+      <div className="w-full">
         <div className="flex flex-wrap justify-center gap-6">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-[#484E56] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 w-full lg:w-[400px]"
+              className="bg-[#484E56] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-[48%] md:w-[48%] lg:w-[30%] max-w-[400px]"
             >
               <div className="h-80 relative">
                 <Image
