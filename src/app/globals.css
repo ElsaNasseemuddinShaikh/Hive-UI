@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --background: #ffffff;
@@ -14,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #272729;
     --foreground: #ededed;
   }
 }
@@ -22,5 +23,67 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins;
 }
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+  /* Card Item common styles */
+.card-item {
+  width: 150px;
+  height: 120px;
+  max-width: 100%;
+}
+
+/* Responsive media queries */
+@media (min-width: 400px) {
+  .card-item {
+    width: 160px;
+    height: 130px;
+  }
+}
+
+@media (min-width: 640px) {
+  .card-item {
+    width: 175px;
+    height: 135px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-item {
+    width: 185px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-item {
+    width: 193px;
+    height: 143px;
+  }
+}
+
+/* Custom shadow for index 3 */
+.custom-shadow {
+  box-shadow: 0px 4px 4px 0px #EFF6FF;
+}
+
+/* Special height for index 3 */
+.special-height {
+  height: 200px; /* Tumne bola tha height 200px honi chahiye index 3 pe */
+}
+
+}
+
