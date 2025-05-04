@@ -33,7 +33,7 @@ export interface CommonBannerProps {
 }
 
 export interface JobCardProps {
-  title: string;
+  title?: string;
   job: string;
   description: string;
   location:string;

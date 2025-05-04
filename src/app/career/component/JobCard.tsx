@@ -6,7 +6,7 @@ import { JobCardProps } from "@/utils/types";
 import { useState } from "react";
 import JobApplicationModal from "./ApplicationForm";
 
-const JobCard: React.FC<JobCardProps> = ({ title, job, description,location,nature,level,type }) => {
+const JobCard: React.FC<JobCardProps> = ({ job, description,location,nature,level,type }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

@@ -114,7 +114,7 @@ const CareerSection = () => {
           filteredJobs.map((job, index) => (
             <JobCard
               key={index}
-              title={job.title}
+              // title={job.title}
               job={job.job}
               description={job.description}
               level={job.experience}
