@@ -27,7 +27,7 @@ const ServiceSection = ({ id }: { id: string }) => {
               key={index}
               className={`relative flex flex-col justify-center items-center bg-[#000000] rounded-[20px] 
   p-[10px] xs:p-[12px] sm:p-[15px]
-  w-[150px] h-[120px]
+  w-[150px] 
   xs:w-[160px] xs:h-[130px]
   sm:w-[175px] sm:h-[135px]
   md:w-[185px] md:h-[140px]
@@ -54,10 +54,10 @@ const ServiceSection = ({ id }: { id: string }) => {
                 height={38}
                 className="mb-[6px] xs:mb-[8px] sm:mb-[10px] w-[40px] h-[38px] xs:w-[45px] xs:h-[43px] sm:w-[50px] sm:h-[48px] md:w-[52px] md:h-[50px]"
               />
-              <span className="font-[700] text-[9px] xs:text-[10px] sm:text-[11px] leading-[100%] tracking-[1px] text-center font-[SF Pro Display] mb-[4px] sm:mb-[6px]">
+              <span className="font-[700] text-[14px] xs:text-[14px] sm:text-[14px] leading-[100%] tracking-[1px] text-center font-[SF Pro Display] mb-[4px] sm:mb-[6px]">
                 {item.title}
               </span>
-              <span className="font-[500] text-[7px] xs:text-[8px] sm:text-[9px] leading-[100%] tracking-[1px] text-center font-[SF Pro Display] px-[5px]">
+              <span className="font-[500] text-[12px] xs:text-[12px] sm:text-[12px] leading-[100%] tracking-[1px] text-center font-[SF Pro Display] px-[5px]">
                 {item.description}
               </span>
             </div>

@@ -155,8 +155,8 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 backdrop-blur-sm bg-[#272729] dark:bg-[#272729] flex items-center justify-center px-4">
-      <div className="bg-[#FFFFFF] w-full max-w-2xl rounded-2xl p-6 sm:p-8 shadow-xl relative">
+    <div className="fixed inset-0 z-50 backdrop-blur-sm bg-[#272729]/90 flex items-center justify-center px-2 sm:px-4 py-6">
+      <div className="bg-white w-full max-w-[95%] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl relative overflow-y-auto max-h-[95vh]">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl cursor-pointer"
@@ -165,17 +165,17 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
           &times;
         </button>
 
-        <h2 className="text-2xl font-semibold text-[#FEA91F] mb-1">
+        <h2 className="text-xl sm:text-2xl font-semibold text-[#FEA91F] mb-2">
           Apply for: {jobTitle}
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-sm sm:text-base text-gray-600 mb-6">
           Please fill out the form below to apply.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Full Name */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Full Name
               </label>
@@ -194,7 +194,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
             </div>
 
             {/* Email */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Email
               </label>
@@ -211,7 +211,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
             </div>
 
             {/* Phone */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Phone Number
               </label>
@@ -228,7 +228,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
             </div>
 
             {/* City */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 City
               </label>
@@ -245,7 +245,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
             </div>
 
             {/* LinkedIn */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 LinkedIn URL (Optional)
               </label>
@@ -259,7 +259,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
             </div>
 
             {/* GitHub */}
-            <div>
+            <div className="col-span-1">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 GitHub URL (Optional)
               </label>
@@ -272,8 +272,8 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
               />
             </div>
 
-            {/* Cover Letter - full width */}
-            <div className="col-span-1 md:col-span-2">
+            {/* Cover Letter */}
+            <div className="col-span-1 sm:col-span-2">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Cover Letter (Optional)
               </label>
@@ -281,12 +281,12 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
                 name="coverLetter"
                 value={formData.coverLetter}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded text-[#272729] resize-none h-28 focus:ring-2 focus:ring-[#FEA91F]"
+                className="w-full p-2 border border-gray-300 text-[#272729] rounded resize-none h-28 focus:ring-2 focus:ring-[#FEA91F]"
               />
             </div>
 
-            {/* Resume - full width */}
-            <div className="col-span-1 md:col-span-2">
+            {/* Resume */}
+            <div className="col-span-1 sm:col-span-2">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Resume (PDF)
               </label>
@@ -304,7 +304,7 @@ const JobApplicationModal: React.FC<JobModelProps> = ({
 
           <button
             type="submit"
-            className="w-full bg-[#FEA91F] hover:bg-[#e2911b] cursor-pointer text-white font-semibold py-2 px-4 rounded-full transition duration-300"
+            className="w-full bg-[#FEA91F] hover:bg-[#e2911b] text-white font-semibold py-2 px-4 rounded-full transition duration-300"
             disabled={isSubmitting || isSubmitted}
           >
             {isSubmitting ? "Submitting..." : "Submit Application"}

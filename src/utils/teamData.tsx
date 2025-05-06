@@ -1,9 +1,9 @@
 import { TeamMember } from "./types";
-import huzaifa from "../../public/assets/huzaifa.png";
-import amir from "../../public/assets/amir.png";
-import zuhaib from "../../public/assets/zuhaib.png";
-import sameer from "../../public/assets/sameer.png";
-import rizwan from "../../public/assets/rizwan.png";
+import huzaifa from "../../public/assets/h.png";
+import amir from "../../public/assets/a.png";
+import zuhaib from "../../public/assets/z.png";
+import sameer from "../../public/assets/s.png";
+import rizwan from "../../public/assets/r.png";
 
 export const teamMembers: TeamMember[] = [
   {

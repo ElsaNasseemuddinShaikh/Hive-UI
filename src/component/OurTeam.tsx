@@ -21,12 +21,12 @@ const TeamSection = () => {
               key={index}
               className="bg-[#484E56] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 w-full sm:w-[48%] md:w-[48%] lg:w-[30%] max-w-[400px]"
             >
-              <div className="h-80 relative">
+              <div className="h-[300px] relative">
                 <Image
                   src={member.imageUrl}
                   alt={member.name}
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                 />
               </div>
               <div className="bg-[#FFFFFF] text-[#000000] text-center py-4 px-2">
